@@ -131,7 +131,66 @@ Ayarlar
 <input placeholder="Telefon">
 
 <input placeholder="Adres">
+<hr>
 
+<h3>Ürün Bilgileri</h3>
+
+<table style="width:100%;border-collapse:collapse;">
+<thead>
+<tr style="background:#ff6600;color:white;">
+<th>Ürün</th>
+<th>Adet</th>
+<th>Birim Fiyat</th>
+<th>Toplam</th>
+</tr>
+</thead>
+
+<tbody>
+
+<tr>
+
+<td>
+
+<select id="urun" style="width:100%;padding:10px;">
+
+<option>Kamera Sistemi</option>
+<option>D-Smart TV</option>
+<option>D-Smart İnternet</option>
+<option>Uydu Sistemi</option>
+<option>Diafon Sistemi</option>
+<option>Network Sistemi</option>
+
+</select>
+
+</td>
+
+<td>
+
+<input id="adet" type="number" value="1" onkeyup="hesapla()" onchange="hesapla()">
+
+</td>
+
+<td>
+
+<input id="fiyat" type="number" value="0" onkeyup="hesapla()" onchange="hesapla()">
+
+</td>
+
+<td>
+
+<input id="toplam" readonly>
+
+</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+<br>
+
+<h2 id="genelToplam">Genel Toplam : 0 ₺</h2>
 <button>Teklifi Kaydet</button>
 
 </div>
