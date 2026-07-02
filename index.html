@@ -1,27 +1,97 @@
-Modern ve profesyonel bir HTML + CSS + JavaScript teklif yönetim paneli oluştur.
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DELUX DİGİTAL Teklif Sistemi</title>
 
-Marka:
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+background:#f2f2f2;
+}
+
+header{
+background:#ff6600;
+color:white;
+padding:20px;
+font-size:28px;
+font-weight:bold;
+}
+
+header p{
+font-size:15px;
+margin-top:5px;
+}
+
+.menu{
+display:flex;
+gap:20px;
+padding:20px;
+flex-wrap:wrap;
+}
+
+.card{
+background:white;
+width:220px;
+padding:30px;
+border-radius:15px;
+box-shadow:0 5px 15px rgba(0,0,0,.15);
+cursor:pointer;
+transition:.3s;
+text-align:center;
+font-size:20px;
+font-weight:bold;
+}
+
+.card:hover{
+transform:translateY(-8px);
+background:#ff6600;
+color:white;
+}
+
+.footer{
+margin-top:40px;
+text-align:center;
+padding:20px;
+color:#666;
+}
+</style>
+
+</head>
+
+<body>
+
+<header>
 DELUX DİGİTAL
+<p>Teklif Yönetim Sistemi</p>
+</header>
 
-Renkler:
-- Turuncu (#ff6600)
-- Siyah
-- Beyaz
+<div class="menu">
 
-Sayfa özellikleri:
-- Sol tarafta açılır/kapanır menü
-- Üstte logo ve kullanıcı bilgisi
-- Ana sayfada 6 büyük kart:
-  - Yeni Teklif
-  - Müşteriler
-  - Ürünler
-  - Teklifler
-  - Raporlar
-  - Ayarlar
-- Hover animasyonları
-- Yuvarlak köşeler
-- Gölge efektleri
-- Responsive tasarım
-- Font Awesome ikonları
-- Tamamen tek dosya (index.html)
-- Harici dosya kullanma.
+<div class="card">📝<br><br>Yeni Teklif</div>
+
+<div class="card">👥<br><br>Müşteriler</div>
+
+<div class="card">📦<br><br>Ürünler</div>
+
+<div class="card">📄<br><br>Teklifler</div>
+
+<div class="card">📊<br><br>Raporlar</div>
+
+<div class="card">⚙️<br><br>Ayarlar</div>
+
+</div>
+
+<div class="footer">
+© 2026 DELUX DİGİTAL
+</div>
+
+</body>
+</html>
