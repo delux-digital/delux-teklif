@@ -198,7 +198,19 @@ Ayarlar
 </div>
 
 <script>
+function hesapla(){
 
+let adet=parseFloat(document.getElementById("adet").value)||0;
+
+let fiyat=parseFloat(document.getElementById("fiyat").value)||0;
+
+let toplam=adet*fiyat;
+
+document.getElementById("toplam").value=toplam.toFixed(2)+" ₺";
+
+document.getElementById("genelToplam").innerHTML="Genel Toplam : "+toplam.toFixed(2)+" ₺";
+
+}
 function yeniTeklif(){
 
 document.getElementById("teklifEkrani").style.display="block";
